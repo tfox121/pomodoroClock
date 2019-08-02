@@ -1,33 +1,137 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Carter One', cursive;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-info {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root {
+  height:100%;
+  width: 100%;
+  background-color: blue;
+}
+
+#clock {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  padding: 0.2em;
+  height: 350px;
+  width: 450px;
+  padding-bottom: 0px;
+}
+
+h1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  font-family: 'Faster One', cursive;
+  font-size: 2.6em;
+}
+
+#break {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+#session {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+#timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  width: 50%;
+  border: 0.5em solid #24504E;
+  border-radius: 30px
+}
+
+#timer-label {
+  background-color: 
+}
+
+#time-left {
+  display: inline-block;
+  font-family: ds-digital;
+  font-size: 5em;
+  line-height: 75%;
+}
+
+#controls {
+  grid-column: 1 / 3;
+  grid-row: 4 / 5;
+  padding-top: 0.5em
+}
+
+#break *, #session * {
+  display: inline;
+}
+
+#session > div, #break > div, #timer-label {
+  font-size: 1.5em;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+  outline: inherit;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  font-size: 1.2em;
+}
+
+#break > button {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+#post {
+  font-size: 0.75em;
+  color: #4DB886;
+}
+
+button:active {
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+  outline: inherit;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  font-size: 1.2em;
+}
+
+button:focus {
+  background: none;
+	color: inherit;
+  border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+  outline: inherit;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  font-size: 1.2em;
 }
