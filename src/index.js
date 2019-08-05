@@ -1,7 +1,6 @@
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
-import $ from 'jquery';
 import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
